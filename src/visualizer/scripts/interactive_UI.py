@@ -81,7 +81,7 @@ def clear_all():
     # Clear the contents of the instructions_text widget
     instructions_text.delete(1.0, tk.END)
     instructions_text.insert(tk.END, "Enter obstacles by clicking on the grid.\nClick 'Done adding obstacles' when finished.")
-    
+
     # Change the color of all squares to white
     for i in range(n):
         for j in range(m):
@@ -106,12 +106,10 @@ canvas.bind("<Button-1>", add_obstacle)
 canvas.bind("<Button-2>", select_start)
 canvas.bind("<Button-3>", select_goal)
 
-
 # Add a button to finish adding obstacles
 button_frame = tk.Frame(window)
 button_frame.pack(side=tk.LEFT, padx=10)
 done_button = tk.Button(button_frame, text="Done adding obstacles", command=done_adding_obstacles)
-#done_button.pack()
 
 # Create two new buttons
 generate_path_button = tk.Button(button_frame, text="Generate Path", command=generate_path)
