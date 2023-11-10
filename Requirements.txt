@@ -1,0 +1,11 @@
+# Python standard libraries
+datetime
+logging
+os
+pickle
+socket
+sys
+threading
+
+# Third-party libraries
+tkinter

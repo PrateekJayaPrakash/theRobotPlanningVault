@@ -94,6 +94,7 @@ class RobotSTM:
         # Create two new buttons
         self.generate_path_button = tk.Button(self.button_frame, text="Generate Path", command=self.generate_path)
         self.clear_button = tk.Button(self.button_frame, text="Clear grid", command=self.clear_all)
+        #self.retry_button = tk.Button(self.button_frame, text="Retry", command=self.)
 
         # Pack the three buttons into the button_frame widget
         self.done_button.pack(side=tk.TOP, padx=5)
